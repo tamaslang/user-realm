@@ -195,12 +195,11 @@ Date: Tue, 15 Nov 2010 08:12:31 GMT
 
 \</error\>
 
-Realm Entity
-------------
+## Realm entity
 
-  **Field**     **Description and Constraints**
-  ------------- ----------------------------------------------
-  id            Unique ID. Primary key. System-generated.
-  name          Realm name (alias for ID). Must be unique.
-  description   Realm description. Up to 255 chars.
-  key           Realm encryption key. Fixed length 32 chars.
+| **Field**         | **Description and Constraints**              |
+| ----------------- |:--------------------------------------------:|
+| id                | Unique ID. Primary key. System-generated     |
+| name              | Realm name (alias for ID). Must be unique.   |
+| description       | Realm description. Up to 255 chars.          |
+| key               | Realm encryption key. Fixed length 32 chars. |
