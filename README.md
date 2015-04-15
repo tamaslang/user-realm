@@ -6,7 +6,7 @@ The APIs specified below support the creation and retrieval of representations o
 
 A User Realm is a context for the registration and authentication of a user, which comprises a unique integer identifier, a unique name, an (encryption) key and a description. 
 
-Detailed spec: <a href="https://github.com/tamaslang/user-realm/blob/master/docs/BrightTALKrecruitment-javacodingexercise-public.docx" target="_blank"/>
+Detailed spec: <a href="https://github.com/tamaslang/user-realm/blob/master/docs/BrightTALKrecruitment-javacodingexercise-public.docx" target="_blank">Specification</a>
 
 ## Run
 
