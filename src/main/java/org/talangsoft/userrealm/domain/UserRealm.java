@@ -1,22 +1,25 @@
 package org.talangsoft.userrealm.domain;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.Valid;
 
 @Entity
 @Table(name = "userrealm")
 public class UserRealm {
 
+    public static final int KEY_LENGTH = 32;
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "name")
+    @Column(name = "name",unique = true)
     private String name;
     @Column(name = "description")
     private String description;
-    @Column(name = "key")
+    @Column(name = "key",length = KEY_LENGTH)
     private String key;
-
 
     public UserRealm() {
     }

@@ -22,6 +22,8 @@ import java.util.function.Function;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.http.MediaType.APPLICATION_XML;
+import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 
 @RestController
 @RequestMapping("/service/user/realm")
@@ -49,6 +51,7 @@ public class UserRealmResourceImpl implements UserRealmResource, Loggable{
 
     @RequestMapping(
             method = RequestMethod.POST,
+            consumes = APPLICATION_JSON_VALUE,
             produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<UserRealmDTO> create(@RequestBody @Valid CreateRealmDTO createUserRealm) {
         logger().info("Create createUserRealm {}",createUserRealm);
